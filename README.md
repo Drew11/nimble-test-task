@@ -1,4 +1,4 @@
-#React app tracker
+# React app tracker
 
 ### Installation:
 
