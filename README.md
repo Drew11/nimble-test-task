@@ -68,3 +68,22 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# React app with client-server
+
+### Installation:
+
+`git clone https://github.com/Drew11/nimble-test-task.git`
+
+`cd toweriq-test-app`
+
+`npm install`
+
+
+To start app use command:
+`npm start`
+
+_starting  application on `localhost:3000`_
+
+
+
+##### To see working demo follow the [Link](https://drew11.github.io/toweriq-test-app/)
