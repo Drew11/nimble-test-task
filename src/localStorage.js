@@ -11,8 +11,25 @@ export const loadState = () => {
 
         const updatedStateToCurrentTime = state.map(item=>{
             if(item.active){
+                const  secondsAfterCloseTab =(moment().unix() - item.startingTime);
+
+                const hours = Math.floor(secondsAfterCloseTab/60/60);
+                const minutes = Math.floor(secondsAfterCloseTab/60);
+                const seconds = secondsAfterCloseTab - ( (hours * 60 * 60) + (minutes*60) );
+
+
+                console.log(hours, minutes, seconds, item.seconds);
+            
+                // let
+                //     minutes = item.minutes + (secondsAfterCloseTab/60),
+                //     hours = item.hours + (secondsAfterCloseTab/60/60),
+                //     seconds = item.seconds + (secondsAfterCloseTab - );
+
+
                 return {...item,
-                    seconds: item.seconds +  (moment().unix() - item.startingTime),
+                    seconds: item.seconds + seconds,
+                    minutes: item.minutes + minutes,
+                    hours: item.hours + hours
                 }
             }
             return item;
