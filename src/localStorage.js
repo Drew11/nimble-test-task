@@ -2,7 +2,7 @@ import moment from 'moment';
 
 export const loadState = () => {
     try {
-        const serializedSate = localStorage.getItem('state');
+        const serializedSate = window.localStorage.getItem('state');
         if(serializedSate === null) {
             return undefined
         }
@@ -20,7 +20,7 @@ export const loadState = () => {
 export const saveState = (state) => {
     try {
         const serializedSate = JSON.stringify(state);
-        localStorage.setItem('state', serializedSate)
+        window.localStorage.setItem('state', serializedSate)
 
     } catch (e) {
         //
