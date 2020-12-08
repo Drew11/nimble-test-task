@@ -11,7 +11,6 @@
                     return state.map(item=>{
                         if(item.id === action.payload.id) {
                             return {...item,
-                                startingTime: action.payload.startingTime - item.seconds,
                                 active: true
                             }
                         }
@@ -22,7 +21,6 @@
                     return state.map(item=>{
                         if(item.id === action.payload.id) {
                             return {...item,
-                                startingTime: 0,
                                 active: false
                             }
                         }
@@ -31,10 +29,10 @@
 
                 case 'UPDATE_SECOND':
                     return state.map(item=>{
-
                         if(item.id === action.payload.id) {
                             return {...item,
-                                seconds: action.payload.currentSecond - item.startingTime,
+                                seconds: item.seconds + (action.payload.currentSecond - action.payload.startingTime),
+                                startingTime: item.startingTime + 1
                             }
                         }
                         return item;
@@ -46,7 +44,6 @@
                             return {...item,
                                 seconds: 0,
                                 minutes: item.minutes + 1,
-                                startingTime: item.startingTime + 60
                             }
                         }
                         return item;

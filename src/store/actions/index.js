@@ -31,12 +31,13 @@ export function startTracker ( id , startingTime ) {
     }
 }
 
-export function updateSecond (id, currentSecond) {
+export function updateSecond (id, currentSecond, startingTime) {
     return {
         type: 'UPDATE_SECOND',
         payload: {
             id,
-            currentSecond
+            currentSecond,
+            startingTime
         }
     }
 }

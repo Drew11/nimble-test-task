@@ -21,6 +21,7 @@ const Tracker = (props) => {
 
 
     useEffect(()=>{
+        const startingTime = moment().unix();
         if(tracker.active){
             if (tracker.minutes > 59) {
                dispatch(updateHour(tracker.id))
@@ -29,7 +30,7 @@ const Tracker = (props) => {
                dispatch(updateMinute(tracker.id))
             }
             const id = setInterval(() => {
-               dispatch(updateSecond(tracker.id, moment().unix()))
+               dispatch(updateSecond(tracker.id, moment().unix(), startingTime ))
             }, 1000);
            return ()=> clearInterval(id);
         }
