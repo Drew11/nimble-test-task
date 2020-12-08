@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nimble-test-task/static/css/main.ee5ebcac.chunk.css",
-    "main.js": "/nimble-test-task/static/js/main.0505ed11.chunk.js",
-    "main.js.map": "/nimble-test-task/static/js/main.0505ed11.chunk.js.map",
+    "main.js": "/nimble-test-task/static/js/main.d4aa7f09.chunk.js",
+    "main.js.map": "/nimble-test-task/static/js/main.d4aa7f09.chunk.js.map",
     "runtime-main.js": "/nimble-test-task/static/js/runtime-main.21d347c5.js",
     "runtime-main.js.map": "/nimble-test-task/static/js/runtime-main.21d347c5.js.map",
     "static/js/2.be40875b.chunk.js": "/nimble-test-task/static/js/2.be40875b.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.21d347c5.js",
     "static/js/2.be40875b.chunk.js",
     "static/css/main.ee5ebcac.chunk.css",
-    "static/js/main.0505ed11.chunk.js"
+    "static/js/main.d4aa7f09.chunk.js"
   ]
 }
