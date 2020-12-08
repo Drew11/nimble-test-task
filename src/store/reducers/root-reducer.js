@@ -31,10 +31,10 @@
 
                 case 'UPDATE_SECOND':
                     return state.map(item=>{
+
                         if(item.id === action.payload.id) {
                             return {...item,
-                                seconds: item.seconds + (action.payload.currentSecond - item.startingTime),
-                                startingTime: item.startingTime + (action.payload.currentSecond - item.startingTime)
+                                seconds: action.payload.currentSecond - item.startingTime,
                             }
                         }
                         return item;
@@ -46,6 +46,7 @@
                             return {...item,
                                 seconds: 0,
                                 minutes: item.minutes + 1,
+                                startingTime: item.startingTime + 60
                             }
                         }
                         return item;

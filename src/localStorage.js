@@ -1,5 +1,3 @@
-import moment from 'moment';
-
 export const loadState = () => {
     try {
         const serializedSate = window.localStorage.getItem('state');
