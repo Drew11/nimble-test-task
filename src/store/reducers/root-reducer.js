@@ -32,7 +32,7 @@
                         if(item.id === action.payload.id) {
                             return {...item,
                                 seconds: item.seconds + (action.payload.currentSecond - action.payload.startingTime),
-                                startingTime: item.startingTime + 1
+                                startingTime: action.payload.startingTime
                             }
                         }
                         return item;

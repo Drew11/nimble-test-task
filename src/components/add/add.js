@@ -25,7 +25,7 @@ function Add() {
         };
 
 
-        if(event.code === 'Enter' || event.type === 'click'){
+        if( event.code === 'Enter' || event.key === 'Enter' || event.type === 'click'){
             dispatch(addTracker(newTracker));
         }
     };
