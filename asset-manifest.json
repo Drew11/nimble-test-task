@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/nimble-test-task/static/css/main.ee5ebcac.chunk.css",
+    "main.js": "/nimble-test-task/static/js/main.e1fbd09e.chunk.js",
+    "main.js.map": "/nimble-test-task/static/js/main.e1fbd09e.chunk.js.map",
+    "runtime-main.js": "/nimble-test-task/static/js/runtime-main.21d347c5.js",
+    "runtime-main.js.map": "/nimble-test-task/static/js/runtime-main.21d347c5.js.map",
+    "static/js/2.be40875b.chunk.js": "/nimble-test-task/static/js/2.be40875b.chunk.js",
+    "static/js/2.be40875b.chunk.js.map": "/nimble-test-task/static/js/2.be40875b.chunk.js.map",
+    "index.html": "/nimble-test-task/index.html",
+    "static/css/main.ee5ebcac.chunk.css.map": "/nimble-test-task/static/css/main.ee5ebcac.chunk.css.map",
+    "static/js/2.be40875b.chunk.js.LICENSE.txt": "/nimble-test-task/static/js/2.be40875b.chunk.js.LICENSE.txt",
+    "static/media/add.css": "/nimble-test-task/static/media/play_circle_filled-24px.3581efba.svg",
+    "static/media/play_circle_outline-24px.39fb5126.svg": "/nimble-test-task/static/media/play_circle_outline-24px.39fb5126.svg",
+    "static/media/tracker.css": "/nimble-test-task/static/media/remove_circle_outline-24px.594713c1.svg",
+    "static/media/stop_circle-24px.12a98abf.svg": "/nimble-test-task/static/media/stop_circle-24px.12a98abf.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.21d347c5.js",
+    "static/js/2.be40875b.chunk.js",
+    "static/css/main.ee5ebcac.chunk.css",
+    "static/js/main.e1fbd09e.chunk.js"
+  ]
+}
