@@ -4,7 +4,7 @@
 
 `git clone https://github.com/Drew11/nimble-test-task.git`
 
-`cd toweriq-test-app`
+`cd nimble-test-task`
 
 `npm install`
 
