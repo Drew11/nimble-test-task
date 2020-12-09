@@ -9,19 +9,20 @@ export const loadState = () => {
 
         const state = JSON.parse(serializedSate);
 
-        console.log(state);
-        const updatedStateToCurrentTime = state.map(item=>{
-            if(item.active){
 
+        return state.map(item=>{
+            if(item.active){
                 const  secondsAfterCloseTab = (moment().unix() - item.startingTime);
 
-                const hoursAfterCloseTab = Math.floor(secondsAfterCloseTab/60/60),
-                      minutesAfterCloseTab = Math.floor(secondsAfterCloseTab/60),
-                      secondsAfterClosenTab = secondsAfterCloseTab - ( (hoursAfterCloseTab * 60 * 60) + (minutesAfterCloseTab*60) );
+                const hoursAfterCloseTab = Math.floor(secondsAfterCloseTab/60/60);
+                const minutesAfterCloseTab = Math.floor(secondsAfterCloseTab/60) - (hoursAfterCloseTab * 60);
+                const secondsAfterClosenTab = secondsAfterCloseTab - ( (hoursAfterCloseTab * 60 * 60) + ( minutesAfterCloseTab * 60) );
 
                 let hours = hoursAfterCloseTab + item.hours;
                 let minutes = minutesAfterCloseTab + item.minutes;
                 let seconds = secondsAfterClosenTab + item.seconds;
+
+                console.log(item)
 
                 if( seconds > 59) {
                     minutes += 1;
@@ -33,11 +34,13 @@ export const loadState = () => {
                     minutes -= 60;
                 }
 
-                console.log({...item,
-                    seconds,
-                    minutes,
-                    hours
-                });
+                console.log(
+                    {...item,
+                        seconds,
+                        minutes,
+                        hours
+                    }
+                )
 
                 return {...item,
                     seconds,
@@ -48,7 +51,6 @@ export const loadState = () => {
             return item;
         });
 
-        return updatedStateToCurrentTime
 
     } catch (e) {
         return undefined
